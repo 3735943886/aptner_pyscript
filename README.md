@@ -21,7 +21,8 @@
 `aptner_pyscript.py`를 Home Assistant `<config>/pyscript` 폴더에 저장합니다. 5개의 액션이 자동으로 등록 됩니다.
 
 ![액션](img.services.png)
-
+<br>
+<br>
 ## 🚀 사용 방법
 
 ### 1\. 초기 로그인 (필수)
@@ -36,7 +37,8 @@
 ![액션](img.login.png)
 
 > 팁: 이 액션은 Home Assistant가 시작될 때마다 실행되는 자동화에 등록해두면 편리합니다.
-
+<br>
+<br>
 ### 2\. 제공되는 액션
 
 #### 가. 아파트너 관리비 (`pyscript.aptner_fee`)
@@ -47,7 +49,8 @@
   * **반환값**: 최근 관리비 세부내역
     
 ![관리비](img.fee.png)
-
+<br>
+<br>
 #### 나. 아파트너 입출차확인 (`pyscript.aptner_findcar`)
 
 차량의 입/출차 상태를 확인합니다.
@@ -57,7 +60,8 @@
   * **반환값**: 차량의 입출차 현황
     
 ![입출차확인](img.carcheck.png)
-
+<br>
+<br>
 #### 다. 아파트너 방문차량 예약현황 (`pyscript.aptner_get_reserve_status`)
 
 현재 예약된 방문차량 목록을 조회합니다.
@@ -66,7 +70,8 @@
   * **반환값**: 연속된 예약일은 하나의 기간으로 묶어서 표시됩니다.
     
 ![예약현황](img.carreservechk.png)
-
+<br>
+<br>
 #### 라. 아파트너 방문차량 예약 (`pyscript.aptner_reserve_car`)
 
 방문차량 주차를 예약합니다.
@@ -79,4 +84,3 @@
       * `phone` (필수): 운전자 연락처 (예: `010-0000-0000`)
 
 ![예약](img.carreserve.png)
-
