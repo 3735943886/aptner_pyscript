@@ -20,7 +20,7 @@
 
 `aptner_pyscript.py`를 Home Assistant `<config>/pyscript` 폴더에 저장합니다. 5개의 액션이 자동으로 등록 됩니다.
 
-![액션](img.services.png)
+![액션](img/services.png)
 <br>
 <br>
 
@@ -35,7 +35,7 @@
   * `id`와 `password` 필드에 아파트너 계정 정보를 입력하고 **실행** 버튼을 누릅니다.
   * 성공적으로 호출되면 이후부터 다른 액션들을 사용할 수 있습니다.
 
-![액션](img.login.png)
+![액션](img/login.png)
 
 > 팁: 이 액션은 Home Assistant가 시작될 때마다 실행되는 자동화에 등록해두면 편리합니다.
 <br>
@@ -49,7 +49,7 @@
   * **파라미터**: 없음
   * **반환값**: 최근 관리비 세부내역
     
-![관리비](img.fee.png)
+![관리비](img/fee.png)
 
 > 팁: 이 액션은 관리비가 부과되는 날 전후로 일정시간 간격 자동으로 호출해서 결과를 attribute로 저장하는 관리비 확인용 센서를 만들면 편리합니다.
 <br>
@@ -62,7 +62,7 @@
       * `carno` (선택 사항): 특정 차량번호를 지정합니다. 지정하지 않으면 모든 등록 차량의 마지막 상태를 반환합니다.
   * **반환값**: 차량의 입출차 현황
     
-![입출차확인](img.carcheck.png)
+![입출차확인](img/carcheck.png)
 <br>
 <br>
 
@@ -73,7 +73,7 @@
   * **파라미터**: 없음
   * **반환값**: 연속된 예약일은 하나의 기간으로 묶어서 표시됩니다.
     
-![예약현황](img.carreservechk.png)
+![예약현황](img/carreservechk.png)
 <br>
 <br>
 
@@ -88,4 +88,4 @@
       * `days` (필수): 방문 기간(일) (예: `1`)
       * `phone` (필수): 운전자 연락처 (예: `010-0000-0000`)
 
-![예약](img.carreserve.png)
+![예약](img/carreserve.png)
