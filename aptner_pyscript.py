@@ -111,8 +111,11 @@ fields:
         if visitCarUseHistoryReport['carNo'] not in response:
           response[visitCarUseHistoryReport['carNo']] = {
             'status': 'out' if visitCarUseHistoryReport['isExit'] else 'in',
-            'time': visitCarUseHistoryReport['outDatetime'] if visitCarUseHistoryReport['isExit'] else visitCarUseHistoryReport['inDatetime']
           }
+          if 'inDatetime' in visitCarUseHistoryReport and visitCarUseHistoryReport['inDatetime'] is not None:
+            response[visitCarUseHistoryReport['carNo']]['intime'] = visitCarUseHistoryReport['inDatetime']
+          if 'outDatetime' in visitCarUseHistoryReport and visitCarUseHistoryReport['outDatetime'] is not None:
+            response[visitCarUseHistoryReport['carNo']]['outtime'] = visitCarUseHistoryReport['outDatetime']
         if visitCarUseHistoryReport['carNo'] == carno:
           break
   return response
